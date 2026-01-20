@@ -4,7 +4,7 @@ from modules.gui_manager import crear_ventana
 #Importa: función que graba, sube y transcribe audio
 from modules.audio_manager import escuchar
 #Importa: función que procesa comandos
-from modules.command_processor import procesar_comandos
+from modules.command_processor import procesar_comando
 #Tkinter para widgets adicionales si es necesario
 import tkinter as tk
 
@@ -62,7 +62,7 @@ def main():
 
         ##---PROCESAR COMAND Y ACTUALIZAR SEMÁFORO
         #Llama a la función que interpreta el comando
-        procesar_comandos(
+        procesar_comando(
             text,                       #Texto transcrito
             canvas,                     #Canvas del semáforo
             (rojo, amarillo, verde),    #IDs de las luces
